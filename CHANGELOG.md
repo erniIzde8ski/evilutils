@@ -20,7 +20,7 @@ Major changes:
 Breaking changes:
 
 - Renamed `evildatetime.TimeDelta` to `evildatetime.Duration`. The `TimeDelta`
-  alias is deprecated & scheduled for future removal.
+  alias is deprecated & slated for future removal.
 
 ## v0.3.1-alpha1, 2026-09-28
 
@@ -38,3 +38,7 @@ Internal changes only. See `v0.3.0` for changes from `v0.2.0`.
 - `evilaio`:
   - Add `to_thread`, `to_threaded` function & decorator
 - Bump minimum Python to 3.13
+
+### internal
+
+- Removed `Makefile`.

@@ -4,5 +4,4 @@ All of the utils I don't want to write twice.
 
 ## Development
 
-This project uses [`pre-commit`](https://pre-commit.com) for formatting purposes
-and `make` for compilation purposes. See `Makefile` for available rules.
+This project runs tests and utilities through [`prek`](https://prek.j178.dev).
