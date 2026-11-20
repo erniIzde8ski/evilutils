@@ -9,8 +9,7 @@ from datetime import tzinfo as TzInfo
 from typing import Self
 from typing import overload
 from typing import override
-
-from typing_extensions import deprecated
+from warnings import deprecated
 
 
 class Duration(timedelta):

@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from typing import Never, final, override
+from typing import Never
+from typing import final
+from typing import override
 
 from evilmonads.result.error import UnwrapError
 

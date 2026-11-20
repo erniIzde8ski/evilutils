@@ -1,4 +1,5 @@
-from typing import Protocol, Self
+from typing import Protocol
+from typing import Self
 
 from .descriptors import Getter
 

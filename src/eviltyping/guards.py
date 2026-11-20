@@ -2,7 +2,9 @@
 
 __all__ = ["strong_cast"]
 
-from typing import TYPE_CHECKING, Any, TypeVar
+from typing import TYPE_CHECKING
+from typing import Any
+from typing import TypeVar
 
 if TYPE_CHECKING:
 

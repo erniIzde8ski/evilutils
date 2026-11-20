@@ -1,9 +1,11 @@
 import re
-from collections.abc import Generator, Iterable
-from enum import IntFlag, auto
+from collections.abc import Generator
+from collections.abc import Iterable
+from enum import IntFlag
+from enum import auto
 from functools import reduce
 
-__all__ = ["auto", "IntFlag", "IntFlagMeta"]
+__all__ = ["IntFlag", "IntFlagMeta", "auto"]
 
 try:
     from .error import ConversionError
@@ -16,7 +18,7 @@ except ImportError:
 _split_word_boundaries = re.compile(r"\b").split
 
 
-def split_word_boundaries(__s: str):
+def split_word_boundaries(__s: str, /):
     for word in _split_word_boundaries(__s):
         word = word.strip()
         if word:

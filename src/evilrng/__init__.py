@@ -1,7 +1,10 @@
-from collections.abc import Callable, Sequence
+from collections.abc import Callable
+from collections.abc import Sequence
 from functools import partial
 from random import Random
-from typing import TYPE_CHECKING, final, overload
+from typing import TYPE_CHECKING
+from typing import final
+from typing import overload
 
 if TYPE_CHECKING:
     from _typeshed import SupportsLenAndGetItem
@@ -21,12 +24,10 @@ class RNG:
     def __init__(self, wrapped: Random, /) -> None: ...
 
     @overload
-    def __init__(
-        self, seed: int | float | str | bytes | bytearray | None = None
-    ) -> None: ...
+    def __init__(self, seed: float | str | bytes | bytearray | None = None) -> None: ...
 
     def __init__(
-        self, seed: Random | int | float | str | bytes | bytearray | None = None
+        self, seed: Random | float | str | bytes | bytearray | None = None
     ) -> None:
         self.__inst = seed if isinstance(seed, Random) else Random(seed)
 

@@ -12,7 +12,6 @@ def get_func_param_names(func: Callable[..., Any]) -> tuple[str, ...]:
     :param func: A callable to analyze.
     :return: A tuple of strings where each string is the name of a positional parameter.
     """
-    ...
 
 def get_func_optional_params(func: Callable[..., Any]) -> dict[str, Any]:
     """
@@ -22,4 +21,3 @@ def get_func_optional_params(func: Callable[..., Any]) -> dict[str, Any]:
     :return: A dictionary where the keys are the names of optional
         parameters and the values are their default values.
     """
-    ...

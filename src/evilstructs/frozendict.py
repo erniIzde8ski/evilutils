@@ -1,8 +1,12 @@
 __all__ = ["frozendict"]
 
 
-from collections.abc import Hashable, Iterable, Iterator, Mapping
-from typing import TYPE_CHECKING, override
+from collections.abc import Hashable
+from collections.abc import Iterable
+from collections.abc import Iterator
+from collections.abc import Mapping
+from typing import TYPE_CHECKING
+from typing import override
 
 from eviltyping import name
 

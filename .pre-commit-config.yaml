@@ -8,17 +8,17 @@ repos:
         exclude: "\\.basedpyright/baseline\\.json$"
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.15.11"
+    rev: "v0.17.6"
     hooks:
       - id: ruff-check
         args: [--fix]
       - id: ruff-format
   - repo: https://github.com/PyCQA/isort
-    rev: "8.0.1"
+    rev: "10.0.0b3"
     hooks:
       - id: isort
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.21.2
+    rev: v3.22.0
     hooks:
       - id: pyupgrade
         args: [--py313-plus]

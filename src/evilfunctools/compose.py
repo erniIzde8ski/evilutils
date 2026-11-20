@@ -1,5 +1,6 @@
 from collections.abc import Callable
-from functools import partial, wraps
+from functools import partial
+from functools import wraps
 from typing import overload
 
 __all__ = ["compose"]
@@ -15,7 +16,6 @@ def compose[**P, RT, MT](F: Fn[RT, MT]) -> PartialComposition[P, RT, MT]:
     """
     A partial composition of F. This overload can be used as a decorator.
     """
-    ...
 
 
 @overload
@@ -27,7 +27,6 @@ def compose[**P, RT, MT](F: Fn[RT, MT], G: Callable[P, RT]) -> Callable[P, MT]:
 
     .. Function composition: https://en.wikipedia.org/wiki/Function_composition_(computer_science)
     """
-    ...
 
 
 def compose[**P, RT, MT](

@@ -1,6 +1,7 @@
 import pathlib
 from datetime import datetime
-from typing import Literal, overload
+from typing import Literal
+from typing import overload
 
 __all__ = ["Path"]
 

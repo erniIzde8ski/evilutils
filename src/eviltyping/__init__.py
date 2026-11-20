@@ -1,19 +1,23 @@
 """All the types I don't want to write twice."""
 
 __all__ = [
-    "StrPath",
+    "Callable",
     "Destructor",
     "Getter",
-    "Setter",
-    "Callable",
-    "Newable",
-    "strong_cast",
     "HasName",
+    "Newable",
+    "Setter",
+    "StrPath",
     "name",
+    "strong_cast",
 ]
 
 from .aliases import StrPath
-from .descriptors import Destructor, Getter, Setter
-from .dunders import Callable, Newable
+from .descriptors import Destructor
+from .descriptors import Getter
+from .descriptors import Setter
+from .dunders import Callable
+from .dunders import Newable
 from .guards import strong_cast
-from .name import HasName, name
+from .name import HasName
+from .name import name

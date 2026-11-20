@@ -12,7 +12,6 @@ def is_case(func: Callable[..., Any]) -> bool:
     :param func: A function to check for the 'case' mark.
     :return: True if the function is marked with 'case', False otherwise.
     """
-    ...
 
 def validate_case_inputs(
     wrapped_func: Callable[..., Any], case_args: tuple[Any], case_kwargs: dict[str, Any]
@@ -20,4 +19,3 @@ def validate_case_inputs(
     """
     Validate the input function for compatibility with case arguments.
     """
-    ...

@@ -4,7 +4,10 @@ from . import _ensure as _  # noqa: F401
 
 import pytest
 
-from evilconverters import ConversionError, IntFlag, IntFlagMeta, auto
+from evilconverters import ConversionError
+from evilconverters import IntFlag
+from evilconverters import IntFlagMeta
+from evilconverters import auto
 
 
 def test_intflagmeta_loads():

@@ -16,4 +16,3 @@ class UnwrappedFunc:
     argnames: tuple[str]
     argvalues: list[ParameterSet]
     defaults: dict[str, Any]
-    ...
