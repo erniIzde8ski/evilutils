@@ -52,6 +52,12 @@ license = { file = "LICENSE" }
 Homepage = "https://github.com/ernieIzde8ski/evilutils"
 Issues =  "https://github.com/ernieIzde8ski/evilutils/issues"
 
+[project.optional-dependencies]
+async = [
+    "anyio>=4.14.2",
+    "async-lru>=2.4.0",
+]
+
 [tool.setuptools.dynamic]
 dependencies = { file = "requirements.txt" }
 version = { attr = "evilutils.__version__" }
