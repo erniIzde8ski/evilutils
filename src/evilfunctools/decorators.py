@@ -1,5 +1,6 @@
 from collections.abc import Callable
-from typing import ParamSpec, TypeVar
+from typing import ParamSpec
+from typing import TypeVar
 
 __all__ = ["immediate"]
 
@@ -10,7 +11,7 @@ MT = TypeVar("MT")
 TT = TypeVar("TT", bound=type)
 
 
-def immediate(func: Callable[[], RT]) -> RT:
+def immediate[RT](func: Callable[[], RT]) -> RT:
     """Immediately evaluate the given function, returning its output.
 
     >>> @immediate

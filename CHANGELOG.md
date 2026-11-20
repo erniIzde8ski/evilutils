@@ -35,4 +35,6 @@ Internal changes only. See `v0.3.0` for changes from `v0.2.0`.
 
 ## master (unreleased)
 
-No changes yet.
+- `evilaio`:
+  - Add `to_thread`, `to_threaded` function & decorator
+- Bump minimum Python to 3.13

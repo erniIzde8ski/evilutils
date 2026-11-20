@@ -2,7 +2,7 @@
 [tool.ruff]
 line-length     = 90
 indent-width    = 4
-target-version  = "py312"
+target-version  = "py313"
 
 [tool.ruff.format]
 docstring-code-format = true
@@ -17,14 +17,9 @@ profile = "black"
 line_length = 90
 force_single_line = true
 
-[tool.black]
-line-length = 90
-target-version = ["py312", "py313", "py314"]
-skip-magic-trailing-comma = true
-
 [tool.basedpyright]
 reportImplicitStringConcatenation = false
-pythonVersion = "3.12"
+pythonVersion = "3.13"
 
 # packaging
 [build-system]
@@ -38,7 +33,7 @@ authors = [
 ]
 description = "All of the utils I don't want to write twice."
 readme = { file = "README.md", content-type="text/markdown" }
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
