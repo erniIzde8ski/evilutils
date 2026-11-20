@@ -26,8 +26,13 @@ Breaking changes:
 
 Internal changes only. See `v0.3.0` for changes from `v0.2.0`.
 
-## master
+## v0.3.1-alpha2, 2026-11-20
 
 - `evildatetime`:
   - Add methods to class `Duration`: `from_seconds`, `from_milliseconds`
   - Add `Seconds` class.
+- Add `evilaio` module
+
+## master (unreleased)
+
+No changes yet.
